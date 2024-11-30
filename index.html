@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <title>Project Management Board</title>
+</head>
+<body>
+    <div class="board-container">
+        <h1>Project Management Dashboard</h1>
+        <div class="board">
+            <div class="column" id="to-do">
+                <h2>To Do</h2>
+                <ul class="task-list" id="to-do-list"></ul>
+                <input type="text" id="to-do-input" placeholder="Add new task">
+                <button id="add-to-do-task">Add Task</button>
+            </div>
+            <div class="column" id="in-progress">
+                <h2>In Progress</h2>
+                <ul class="task-list" id="in-progress-list"></ul>
+            </div>
+            <div class="column" id="done">
+                <h2>Done</h2>
+                <ul class="task-list" id="done-list"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
